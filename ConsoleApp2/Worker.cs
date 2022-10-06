@@ -14,6 +14,8 @@ namespace ConsoleApp2
         public Worker(string name)
         {
             Name = name;
+            Position = "";
+            WorkDay = "";
         }
         public string GetName()
         {
