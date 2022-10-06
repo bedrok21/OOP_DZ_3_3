@@ -8,7 +8,7 @@ namespace ConsoleApp2
 {
     internal class Team
     {
-        private string Name { get; set; }
+        private string Name;
         private List<Worker> workers = new List<Worker>();
         public Team(string name)
         {

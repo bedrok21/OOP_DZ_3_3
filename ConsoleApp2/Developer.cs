@@ -16,8 +16,10 @@ namespace ConsoleApp2
 
         public override void FillWorkDay()
         {
-          
-            WriteCode(); Call(); Relax(); WriteCode();
+            WriteCode(); 
+            Call(); 
+            Relax();
+            WriteCode();
         }
     }
 }

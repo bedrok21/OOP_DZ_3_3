@@ -23,11 +23,11 @@ namespace ConsoleApp2
         }
         public void Call()
         {
-            WorkDay = "Телефонує";
+            WorkDay += "Телефонує";
         } 
         public void Relax()
         {
-            WorkDay = "Відпочиває";
+            WorkDay += "Відпочиває";
         }
         public void WriteCode()
         {

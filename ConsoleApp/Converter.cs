@@ -8,10 +8,12 @@ namespace ConsoleApp
 {
     internal class Converter
     {
-        private decimal UsdUah, EurUah;
+        private decimal UsdUah;
+        private decimal EurUah;
         public Converter(decimal u, decimal e)
         {
-            UsdUah = u; EurUah = e;
+            UsdUah = u; 
+            EurUah = e;
         }
         public decimal UahToUsd(decimal h) => h / UsdUah;
         public decimal UahToEur(decimal h) => h / EurUah;
