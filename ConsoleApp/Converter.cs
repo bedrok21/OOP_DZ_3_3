@@ -8,17 +8,17 @@ namespace ConsoleApp
 {
     internal class Converter
     {
-        private decimal UsdUah;
-        private decimal EurUah;
-        public Converter(decimal u, decimal e)
+        private decimal usdUah;
+        private decimal eurUah;
+        public Converter(decimal usdUah, decimal eurUah)
         {
-            UsdUah = u; 
-            EurUah = e;
+            this.usdUah = usdUah; 
+            this.eurUah = eurUah;
         }
-        public decimal UahToUsd(decimal h) => h / UsdUah;
-        public decimal UahToEur(decimal h) => h / EurUah;
-        public decimal UsdToUah(decimal u) => u * UsdUah;
-        public decimal EurToUah(decimal e) => e * EurUah;
+        public decimal UahToUsd(decimal hrivnaAmount) => hrivnaAmount / usdUah;
+        public decimal UahToEur(decimal hrivnaAmount) => hrivnaAmount / eurUah;
+        public decimal UsdToUah(decimal usdAmount) => usdAmount * usdUah;
+        public decimal EurToUah(decimal eurAmount) => eurAmount * eurUah;
 
     }
 }
