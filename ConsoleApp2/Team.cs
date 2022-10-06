@@ -4,34 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace ConsoleApp2_2
 {
     internal class Team
     {
         private string Name;
         private List<Worker> workers = new List<Worker>();
-        public Team(string name)
+        public Team(string name) => Name = name;
+        public void AddWorker(Worker worker)
         {
-            Name = name;
-        }
-        public void AddWorker(Worker w)
-        {
-            workers.Add(w);
+            workers.Add(worker);
         }
         public void PrintInfo()
         {
             Console.WriteLine(Name);
-            foreach (Worker w in workers)
+            foreach (Worker worker in workers)
             {
-                Console.WriteLine(w.GetName());
+                Console.WriteLine(worker.GetName());
             }
         }
         public void PrintFullInfo()
         {
             Console.WriteLine(Name);
-            foreach(Worker w in workers)
+            foreach(Worker worker in workers)
             {
-                Console.WriteLine(w.GetInfo());
+                Console.WriteLine(worker.GetInfo());
             }
         }
     }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace ConsoleApp2_2
 {
     internal abstract class Worker
     {
@@ -17,26 +17,11 @@ namespace ConsoleApp2
             Position = "";
             WorkDay = "";
         }
-        public string GetName()
-        {
-            return Name;
-        }
-        public void Call()
-        {
-            WorkDay += "Телефонує";
-        } 
-        public void Relax()
-        {
-            WorkDay += "Відпочиває";
-        }
-        public void WriteCode()
-        {
-            WorkDay = "Програмує";
-        }
-        public string GetInfo()
-        {
-            return $"{Name}-{Position}-{WorkDay}"; 
-        }
+        public string GetName() => Name;
+        public void Call() => WorkDay += "Телефонує";
+        public void Relax() => WorkDay += "Відпочиває";
+        public void WriteCode() => WorkDay += "Програмує";
+        public string GetInfo() => $"{Name}-{Position}-{WorkDay}";
         abstract public void FillWorkDay();
     }
 }

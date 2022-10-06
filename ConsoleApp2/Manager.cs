@@ -5,7 +5,7 @@ using System.Runtime.Serialization.Formatters;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace ConsoleApp2_2
 {
     internal class Manager : Worker
     {
@@ -13,15 +13,15 @@ namespace ConsoleApp2
         {
             Position = "Менеджер";
         }
-        private Random rand = new Random();
+        private Random random = new Random();
         public override void FillWorkDay()
         {
-            for(int i = 0; i < rand.Next(10); i++)
+            for(int i = 0; i < random.Next(10); i++)
             {
                 Call();
             }
             Relax();
-            for (int i = 0; i < rand.Next(5); i++)
+            for (int i = 0; i < random.Next(5); i++)
             {
                 Call();
             }
